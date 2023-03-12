@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script src="./js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Login Area Start -->
+      <div id="login-area">
+        <form class="w-25 mx-auto mt-5">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Usarname</label>
+            <input
+              type="text"
+              class="form-control"
+              id="usarname"
+              aria-describedby="emailHelp"
+              placeholder="admin"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="admin"
+            />
+          </div>
+          <button type="submit" id="login" class="btn btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+      <!-- Login Area End -->
+
+      <!-- User Area Start -->
+      <div id="user-area" class="w-75 mx-auto mt-5">
+        <form>
+          <div class="row">
+            <div class="col">
+              <label for="form-control">First name</label>
+              <input
+                type="text"
+                name="firstname"
+                id="input"
+                class="form-control"
+                placeholder="First name"
+              />
+            </div>
+            <div class="col">
+              <label for="form-control">Last name</label>
+              <input
+                type="text"
+                name="lastname"
+                id="input"
+                class="form-control"
+                placeholder="Last name"
+              />
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="exampleFormControlTextarea1"
+              >Please Write To Your Comment</label
+            >
+            <textarea class="form-control" name="comment" id="input" rows="15"></textarea>
+          </div>
+          <div class="button d-flex justify-content-end">
+            <button
+              type="button"
+              id="share"
+              class="btn btn-outline-success btn-lg"
+            >
+              Share
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- User Area End -->
+
+      <!-- Comment Area Start -->
+      <div id="comment-area" class=" w-75 mx-auto">
+    <h4 id="firstname" class="share-info">Firstname : </h4>
+    <h4 id="lastname" class="share-info">Lastname : </h4>
+       <span id="comment"  class="share-info badge badge-primary text-align-center text-wrap font-weight-bold">
+       </span>
+      </div>
+      <!-- Comment Area End -->
+    </main>
+  </body>
+</html>
